@@ -1,0 +1,14 @@
+/* ===============================
+   BOOTSTRAP
+================================ */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* ===============================
+   FONTAWESOME
+================================ */
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+/* ===============================
+   CUSTOM GLOBAL STYLES
+================================ */
