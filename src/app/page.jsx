@@ -1,8 +1,14 @@
-export default function Home() {
+import PublicLayout from "@/components/layout/PublicLayout";
+
+export default function HomePage() {
     return (
-        <main>
-            <h1>Welcome to the School Portal</h1>
-            <p>Manage your school activities and resources efficiently.</p>
-        </main>
+        <PublicLayout>
+            <div className="container py-5">
+                <h1 className="fw-bold">Welcome to the School Portal</h1>
+                <p className="text-muted">
+                    Manage academics, staff, and students seamlessly.
+                </p>
+            </div>
+        </PublicLayout>
     );
 }

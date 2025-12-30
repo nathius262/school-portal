@@ -12,3 +12,25 @@
 /* ===============================
    CUSTOM GLOBAL STYLES
 ================================ */
+/* ===============================
+   SCHOOL PORTAL THEME TOKENS
+================================ */
+:root {
+  --sp-primary: #0b5ed7;
+  /* Academic blue */
+  --sp-primary-dark: #084298;
+  --sp-secondary: #6c757d;
+  --sp-accent: #f1f5ff;
+
+  --sp-header-bg: #ffffff;
+  --sp-header-text: #1f2937;
+
+  --sp-footer-bg: #0f172a;
+  --sp-footer-text: #cbd5e1;
+
+  --sp-border-light: #e5e7eb;
+}
+
+.nav-link {
+  color: var(--sp-accent) !important;
+}
