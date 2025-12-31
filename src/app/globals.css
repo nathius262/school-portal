@@ -16,21 +16,33 @@
    SCHOOL PORTAL THEME TOKENS
 ================================ */
 :root {
-  --sp-primary: #0b5ed7;
-  /* Academic blue */
-  --sp-primary-dark: #084298;
-  --sp-secondary: #6c757d;
-  --sp-accent: #f1f5ff;
+   --sp-primary: #0b5ed7;
+   /* Academic blue */
+   --sp-primary-dark: #084298;
+   --sp-secondary: #6c757d;
+   --sp-accent: #f1f5ff;
 
-  --sp-header-bg: #ffffff;
-  --sp-header-text: #1f2937;
+   --sp-header-bg: #ffffff;
+   --sp-header-text: #1f2937;
 
-  --sp-footer-bg: #0f172a;
-  --sp-footer-text: #cbd5e1;
+   --sp-footer-bg: #0f172a;
+   --sp-footer-text: #cbd5e1;
 
-  --sp-border-light: #e5e7eb;
+   --sp-border-light: #e5e7eb;
 }
 
 .nav-link {
-  color: var(--sp-accent) !important;
+   color: var(--sp-accent) !important;
+}
+
+.hero-section {
+   min-height: 75vh;
+   background: linear-gradient(rgba(11, 46, 89, 0.75),
+         rgba(11, 46, 89, 0.75)),
+      url('/images/school-hero.jpg') center/cover no-repeat;
+   color: #fff;
+}
+
+.cta-section {
+   background-color: var(--light-color);
 }

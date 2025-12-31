@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
     return (
         <nav
-            className="navbar navbar-expand-lg border-bottom"
+            className="navbar navbar-expand-lg"
             style={{
                 backgroundColor: "var(--sp-footer-bg)",
                 color: "var(--sp-footer-text)",
