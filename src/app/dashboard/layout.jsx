@@ -1,4 +1,4 @@
-import "@/styles/theme.css";
+import "@/styles/dashboard.css";
 
 export const metadata = {
     title: "Dashboard - School Portal",
@@ -6,5 +6,10 @@ export const metadata = {
 };
 
 export default function DashboardLayout({ children }) {
-    return <>{children}</>;
+    return (
+        <>
+            {children}
+        </>
+
+    );
 }

@@ -6,72 +6,34 @@ export default function TopNavbar() {
     const [open, setOpen] = useState(false);
 
     return (
-        <header
-            className="d-flex align-items-center justify-content-between px-4 py-3 border-bottom"
-            style={{ background: "var(--bg-card)" }}
-        >
-            {/* Left: Page Context */}
-            <div>
-                <h6 className="mb-0" style={{ color: "var(--text-primary)" }}>
-                    Dashboard
-                </h6>
-                <small style={{ color: "var(--text-muted)" }}>
-                    Welcome back
-                </small>
+        <div className="header">
+            <div className="welcome-section">
+                <h1>Welcome back, Alex Johnson!</h1>
+                <p>Here's your academic overview for the semester</p>
             </div>
 
-            {/* Right: Actions */}
-            <div className="d-flex align-items-center gap-3">
-                {/* Notifications */}
-                <button
-                    className="btn btn-sm btn-light position-relative"
-                    aria-label="Notifications"
-                >
-                    🔔
-                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                        3
-                    </span>
-                </button>
-
-                {/* Profile */}
-                <div className="position-relative">
-                    <button
-                        className="btn btn-sm btn-light d-flex align-items-center gap-2"
-                        onClick={() => setOpen(!open)}
-                    >
-                        <span
-                            className="rounded-circle d-inline-flex align-items-center justify-content-center"
-                            style={{
-                                width: 28,
-                                height: 28,
-                                background: "var(--primary)",
-                                color: "var(--text-light)",
-                            }}
-                        >
-                            U
-                        </span>
-                        <span style={{ color: "var(--text-primary)" }}>Account</span>
-                    </button>
-
-                    {open && (
-                        <div
-                            className="position-absolute end-0 mt-2 shadow rounded"
-                            style={{
-                                background: "var(--bg-card)",
-                                minWidth: 180,
-                                zIndex: 1000,
-                            }}
-                        >
-                            <button className="dropdown-item py-2">Profile</button>
-                            <button className="dropdown-item py-2">Settings</button>
-                            <hr className="my-1" />
-                            <button className="dropdown-item py-2 text-danger">
-                                Logout
-                            </button>
+            <div className="user-menu">
+                <div className="notification-badge">
+                    <i className="bi bi-bell fs-5"></i>
+                    <span>3</span>
+                </div>
+                <div className="dropdown">
+                    <button className="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" type="button" id="userDropdown" data-bs-toggle="dropdown">
+                        <div className="me-2">
+                            <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style={{ width: 36, height: 36 }}>
+                                AJ
+                            </div>
                         </div>
-                    )}
+                        <span>Alex</span>
+                    </button>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="#"><i className="bi bi-person me-2"></i>Profile</a></li>
+                        <li><a className="dropdown-item" href="#"><i className="bi bi-gear me-2"></i>Settings</a></li>
+                        <li><hr className="dropdown-divider"></hr></li>
+                        <li><a className="dropdown-item" href="#"><i className="bi bi-box-arrow-right me-2"></i>Logout</a></li>
+                    </ul>
                 </div>
             </div>
-        </header>
+        </div>
     );
 }
